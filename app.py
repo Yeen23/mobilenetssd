@@ -156,7 +156,7 @@ def event_handle(event):
             replyObj = TextSendMessage(text= "กินแล้วจ้า")
         elif (msg == "แฟนน่ารัก" :)
             replyObj = TextSendMessage(text= "คลั่งรักเพื่อ")
-            
+        elif :
             
         line_bot_api.reply_message(rtoken, replyObj)
     elif msgType == "image":

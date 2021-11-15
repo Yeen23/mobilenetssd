@@ -147,13 +147,16 @@ def event_handle(event):
         replyObj = StickerSendMessage(package_id=str(1),sticker_id=str(sk_id))
         line_bot_api.reply_message(rtoken, replyObj)
         return ''
-
-    if msgType == "text":
+      
+        if msgType == "text":
         msg = str(event["message"]["text"])
-        if msg == "สวัสดี" :
+        if (msg == "สวัสดี" :)
             replyObj = TextSendMessage(text= "ดีควัฟเบบี๋")
-        if msg == "กินข้าวไหม" :
+        elif (msg == "กินข้าวไหม"  :)
             replyObj = TextSendMessage(text= "กินแล้วจ้า")
+        elif (msg == "แฟนน่ารัก" :)
+            replyObj = TextSendMessage(text= "คลั่งรักเพื่อ")
+            
             
         line_bot_api.reply_message(rtoken, replyObj)
     elif msgType == "image":
